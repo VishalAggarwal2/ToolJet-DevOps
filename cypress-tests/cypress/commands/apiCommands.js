@@ -7,7 +7,7 @@ Cypress.Commands.add(
   ) => {
     cy.request({
       url: `http://localhost:3000/api/authenticate/${workspaceId}`,
-      method: "POST",
+      method: "GET",
       body: {
         email: userEmail,
         password: userPassword,
